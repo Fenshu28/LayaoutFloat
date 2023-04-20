@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,14 @@
     <title>Document</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         /* clase para el principal */
-        div.principal{
+        div.principal {
             width: 80%;
             margin: 0 auto;
             padding: 0px 10px;
@@ -27,7 +28,7 @@
             color: white;
             height: 25em;
             overflow: hidden;
-            
+
             /*imagen de fondo*/
             /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images);
             background-repeat: no-repeat;
@@ -42,9 +43,9 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        
+
         /* Clase que modifica la imgen hero */
-        img.hero{
+        img.hero {
             width: 100%;
             display: block;
             position: absolute;
@@ -54,88 +55,119 @@
         }
 
         /* clase para el texto del encabezado */
-        .center-text h1{
+        .center-text h1 {
             font-size: 50px;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);;
+            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+            ;
         }
 
         /* clase para agregar sombre a los encabezados */
-        .center-text h2{
-            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);;
+        .center-text h2 {
+            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
         }
 
         /* clase para el menu */
-        .menu{
+        .menu {
             height: 4em;
             background-color: #8e98c7;
             overflow: hidden;
             position: relative;
-            margin: 0;
         }
 
-        .menu a{
+        .menu a {
             text-decoration: none;
             text-align: center;
-            padding: 4em 10px;
-            color:rgb(0, 0, 0);
+            padding: 4em 5px;
+            color: rgb(0, 0, 0);
         }
-       
-        .menu a:hover{
+
+        .menu a:hover {
             background-color: lightblue;
         }
 
-        .menu-elements{
+        .menu-elements {
+            position: absolute;
             top: 50%;
             left: 50%;
-            position: absolute;
             transform: translate(-50%, -50%);
+            /* width: 1vw; */
         }
 
-        .flotante div{
+        .flotante div {
             float: left;
         }
 
-        section::after{
+        section::after {
             content: "";
             display: table;
             clear: both;
         }
+
         /*<img class="hero" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images" alt="Triskel">*/
     </style>
 
 </head>
+
 <body>
     <div class="principal">
-        
+
         <div class="hero-image">
-            <img class="hero" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images" alt="Triskel">
+            <img class="hero"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images"
+                alt="Triskel">
             <div class="center-text">
                 <h1>El sígnificado del Triskel</h1>
                 <h2>Trinidades y totalidad.</h2>
             </div>
         </div>
-        
+
         <div class="menu">
-            <div class="center-text">
+            <div class="menu-elements">
                 <a href="/#Elemento1">Elemento1</a>
                 <a href="/#Elemento2">Elemento2</a>
                 <a href="/#Elemento3">Elemento3</a>
                 <a href="/#Elemento4">Elemento4</a>
-                <a href="/#Elemento5">Elemento5</a>
-            </div>            
+            </div>
         </div>
 
         <section class="flotante">
-            <div class="columna1"><h2>Titulo1</h2><picture><img src="" alt=""><figcaption>Leyenda de imagen</figcaption></picture><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis magnam! Quo!</p></div>
-            <div class="columna2"><h2>Titulo2</h2><picture><img src="" alt=""><figcaption>Leyenda de imagen</figcaption></picture><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis magnam! Quo!</p></div>
-            <div class="columna3"><h2>Titulo3</h2><picture><img src="" alt=""><figcaption>Leyenda de imagen</figcaption></picture><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis magnam! Quo!</p></div>
+            <div class="columna1">
+                <h2>Titulo1</h2>
+                <picture><img src="" alt="">
+                    <figcaption>Leyenda de imagen</figcaption>
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
+                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
+                    magnam! Quo!</p>
+            </div>
+            <div class="columna2">
+                <h2>Titulo2</h2>
+                <picture><img src="" alt="">
+                    <figcaption>Leyenda de imagen</figcaption>
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
+                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
+                    magnam! Quo!</p>
+            </div>
+            <div class="columna3">
+                <h2>Titulo3</h2>
+                <picture><img src="" alt="">
+                    <figcaption>Leyenda de imagen</figcaption>
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
+                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
+                    magnam! Quo!</p>
+            </div>
         </section>
 
         <footer>
             <h1>Pie de pagina</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquam aut culpa eaque magni quisquam commodi, deleniti distinctio sapiente quas, officiis labore. Consectetur rerum veniam iste repellat cum dolores accusamus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquam aut culpa eaque magni
+                quisquam commodi, deleniti distinctio sapiente quas, officiis labore. Consectetur rerum veniam iste
+                repellat cum dolores accusamus.</p>
         </footer>
     </div>
 </body>
+
 </html>
