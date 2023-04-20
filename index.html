@@ -12,18 +12,31 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        /* clase para el principal */
         div.principal{
             width: 80%;
             margin: 0 auto;
             padding: 0px 10px;
         }
 
+        /* clase para el div que contiene el hero image */
         .hero-image {
             position: relative;
             text-align: center;
             color: white;
+            border-color: aliceblue;
+            border-style: solid;
+            height: 25em;
+            
+            /*imagen de fondo*/
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
+        /* clase para el div que contiene los textos del image hero */
         .hero-text {
             position: absolute;
             top: 50%;
@@ -31,63 +44,56 @@
             transform: translate(-50%, -50%);
         }
 
-        .hero-text h1 {
+        /* clase para el texto del encabezado */
+        .hero-text h1{
             font-size: 50px;
             margin-bottom: 20px;
         }
 
-        .hero-text p {
-            font-size: 20px;
+        /* clase para agregar sombre a los encabezados */
+        div.hero-image h1,h2:first-of-type{
+            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);;
         }
 
-        img.hero{
+        /* clase para el menu */
+        .menu{
+            height: 4em;
+            background-color: #8e98c7;
+        }
+         /* img.hero{
             width: 100%;
             display: block;
-            
-        }
+        } */
 
-        div.hero-image h1,h2:first-of-type{
-            overflow: hidden;
-            text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);;
-        }       
-
-
+        /*<img class="hero" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images" alt="Triskel">*/
     </style>
 
 </head>
 <body>
     <div class="principal">
+        
         <div class="hero-image">
-            <img class="hero" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images" alt="Triskel">
             <div class="hero-text">
               <h1>El sígnificado del Triskel</h1>
               <h2>Trinidades y totalidad.</h2>
             </div>
-          </div>
+        </div>
 
-          <div class="w3-row-padding">
-            <div class="w3-third">
-              <h2>London</h2>
-              <p>London is the capital city of England.</p>
-              <p>It is the most populous city in the United Kingdom,
-              with a metropolitan area of over 13 million inhabitants.</p>
-            </div>
-          
-            <div class="w3-third">
-              <h2>Paris</h2>
-              <p>Paris is the capital of France.</p>
-              <p>The Paris area is one of the largest population centers in Europe,
-              with more than 12 million inhabitants.</p>
-            </div>
-          
-            <div class="w3-third">
-              <h2>Tokyo</h2>
-              <p>Tokyo is the capital of Japan.</p>
-              <p>It is the center of the Greater Tokyo Area,
-              and the most populous metropolitan area in the world.</p>
-            </div>
-          </div>
-        
+        <div class="menu">
+            <a href="/#Elemento1">Elemento1</a>
+            <a href="/#Elemento2">Elemento2</a>
+            <a href="/#Elemento3">Elemento3</a>
+            <a href="/#Elemento4">Elemento4</a>
+            <a href="/#Elemento5">Elemento5</a>
+        </div>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+
     </div>
 </body>
 </html>
