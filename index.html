@@ -18,7 +18,8 @@
         div.principal {
             width: 80%;
             margin: 0 auto;
-            padding: 0px 10px;
+            padding: 0;
+            box-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
         }
 
         /* clase para el div que contiene el hero image */
@@ -53,7 +54,6 @@
             font-size: 50px;
             margin-bottom: 20px;
             text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
-            ;
         }
 
         /* clase para agregar sombre a los encabezados */
@@ -63,17 +63,20 @@
 
         /* clase para el menu */
         .menu {
-            height: 4em;
+            /* height: 4em; */
             background-color: #8e98c7;
             overflow: hidden;
-            position: relative;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            text-align: center;
         }
 
         .menu a {
             text-decoration: none;
             text-align: center;
-            padding: 4em 5px;
             color: rgb(0, 0, 0);
+            padding: 100% 15px;
         }
 
         .menu a:hover {
@@ -81,29 +84,32 @@
         }
 
         .menu-elements {
-            position: absolute;
+            /* position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+            /* width: 100%; */
+            /* margin: 0 auto; */
+            padding: 1em;
         }
 
-        .flotante div {
+        .flotante>div {
             float: left;
             width: 33%;
             padding: 0 15px;
             overflow: hidden;
         }
 
-        .flotante figure{
+        .flotante figure {
             overflow: hidden;
         }
-        
 
-        .flotante img{
+        .flotante img {
             width: 100%;
         }
 
-        h2,figcaption{
+        h2,
+        figcaption {
             text-align: center;
         }
 
@@ -111,6 +117,31 @@
             content: "";
             display: table;
             clear: both;
+        }
+
+        footer {
+            height: 5em;
+            background-color: #8e98c7;
+            overflow: auto;
+            text-align: center;
+        }
+
+        picture div {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        p {
+            padding: 15px;
+        }
+
+        em{
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px;
         }
     </style>
 
@@ -129,54 +160,67 @@
             </div>
         </div>
 
-        <div class="menu">
+        <nav class="menu">
             <div class="menu-elements">
                 <a href="/#Elemento1">Elemento1</a>
                 <a href="/#Elemento2">Elemento2</a>
                 <a href="/#Elemento3">Elemento3</a>
                 <a href="/#Elemento4">Elemento4</a>
             </div>
-        </div>
+        </nav>
 
         <section class="flotante">
             <div>
                 <h2>Fuerza</h2>
-                <picture><img src="https://i.pinimg.com/originals/6e/54/91/6e54914a9414f8d5510403169a142875.jpg" alt="Triskel-Fuerza">
+                <picture>
+                    <div>
+                        <img src="https://i.pinimg.com/originals/6e/54/91/6e54914a9414f8d5510403169a142875.jpg"
+                            alt="Triskel-Fuerza">
+                    </div>
                     <figcaption>Primera espiral: Cuerpo.</figcaption>
                 </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
-                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
-                    magnam! Quo! 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam qui libero tempore reiciendis quia nesciunt incidunt enim veniam, perspiciatis reprehenderit sunt sint, recusandae, ullam nihil at totam animi saepe molestias.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat tempora ab enim cupiditate ea optio nulla odio blanditiis debitis. Animi ad magni alias ducimus, optio fugit sit officiis numquam quidem?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur delectus, voluptatum nisi repellat quis aperiam dicta dolore placeat ratione amet reiciendis cumque doloribus sint possimus, deserunt a quod eligendi!
+                <p>El triskel representa la trinidad de mente alma y cuerpo, en perfecta armonía y equilibrio, su forma
+                    de espirales en movimiento representan la evolución y el desapego a situaciones que alejen al
+                    individuo de su centro común tanto físico mental o espiritual; que es de donde surgen las tres
+                    espirales, se unen al círculo exterior que representa el ser, que está formado equilibradamente por
+                    todos sus elementos.
                 </p>
             </div>
             <div>
                 <h2>Sabiduría</h2>
-                <picture><img src="https://cdn0.psicologia-online.com/es/posts/9/4/1/que_es_el_alma_en_psicologia_5149_orig.jpg" alt="Triskel-Alma">
+                <picture>
+                    <div>
+                        <img src="https://cdn0.psicologia-online.com/es/posts/9/4/1/que_es_el_alma_en_psicologia_5149_orig.jpg"
+                            alt="Triskel-Alma">
+                    </div>
                     <figcaption>Segunda espiral: Alma</figcaption>
                 </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
-                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
-                    magnam! Quo!</p>
+                <p>La primera espiral representa los límites y capacidades, sensaciones y sentidos del cuerpo; la
+                    segunda representa el camino de las ideas y el pensamiento, la razón y la conciencia; finalmente el
+                    tercer espiral es conocida como triskillan representa el duro camino del alma, este en específico es
+                    el más nubloso por la dificultad de aprender del mundo de los dioses y del espíritu.</p>
             </div>
             <div>
                 <h2>Amor</h2>
-                <picture><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DickseeRomeoandJuliet.jpg/800px-DickseeRomeoandJuliet.jpg" alt="Triskel-Amor">
+                <picture>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DickseeRomeoandJuliet.jpg/800px-DickseeRomeoandJuliet.jpg"
+                            alt="Triskel-Amor">
+                    </div>
                     <figcaption>Tercera espiral: Corazón</figcaption>
                 </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
-                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
-                    magnam! Quo!</p>
+                <p>En definitiva el triskel representa el aprendizaje perpetuo y la evolución del ser y del universo;
+                    además es la representación más cercana a la de druida, por lo que junto al báculo, la oz, el
+                    caldero, la varita y el muérdago son las herramientas infaltables para el trabajo del druida.</p>
             </div>
         </section>
 
+        <em>
+            “Tu mundo es una esfera sagrada… En su interior cohabitan las tres partes de ti, idénticas en tamaño, pero diferentes en naturaleza. Cada una de estas partes es tú mismo y contiene tu evolución y tu alma.» <br> Tradición oral celta en uno de los libros sagrados.
+        </em>
+
         <footer>
-            <h1>Pie de pagina</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquam aut culpa eaque magni
-                quisquam commodi, deleniti distinctio sapiente quas, officiis labore. Consectetur rerum veniam iste
-                repellat cum dolores accusamus.</p>
+            Creditos: Cristopher
         </footer>
     </div>
 </body>
