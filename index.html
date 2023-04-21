@@ -28,12 +28,6 @@
             color: white;
             height: 25em;
             overflow: hidden;
-
-            /*imagen de fondo*/
-            /* background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center; */
         }
 
         /* clase para el div que contiene los textos del image hero */
@@ -91,11 +85,26 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            /* width: 1vw; */
         }
 
         .flotante div {
             float: left;
+            width: 33%;
+            padding: 0 15px;
+            overflow: hidden;
+        }
+
+        .flotante figure{
+            overflow: hidden;
+        }
+        
+
+        .flotante img{
+            width: 100%;
+        }
+
+        h2,figcaption{
+            text-align: center;
         }
 
         section::after {
@@ -103,8 +112,6 @@
             display: table;
             clear: both;
         }
-
-        /*<img class="hero" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F38%2F95%2FuXH2bT.jpg&f=1&nofb=1&ipt=54080d01ad681b9fa9d3a656fad1b8b3b140317313c689792a80dd9315d5fe56&ipo=images" alt="Triskel">*/
     </style>
 
 </head>
@@ -132,28 +139,32 @@
         </div>
 
         <section class="flotante">
-            <div class="columna1">
-                <h2>Titulo1</h2>
-                <picture><img src="" alt="">
-                    <figcaption>Leyenda de imagen</figcaption>
+            <div>
+                <h2>Fuerza</h2>
+                <picture><img src="https://i.pinimg.com/originals/6e/54/91/6e54914a9414f8d5510403169a142875.jpg" alt="Triskel-Fuerza">
+                    <figcaption>Primera espiral: Cuerpo.</figcaption>
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
+                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
+                    magnam! Quo! 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam qui libero tempore reiciendis quia nesciunt incidunt enim veniam, perspiciatis reprehenderit sunt sint, recusandae, ullam nihil at totam animi saepe molestias.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat tempora ab enim cupiditate ea optio nulla odio blanditiis debitis. Animi ad magni alias ducimus, optio fugit sit officiis numquam quidem?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur delectus, voluptatum nisi repellat quis aperiam dicta dolore placeat ratione amet reiciendis cumque doloribus sint possimus, deserunt a quod eligendi!
+                </p>
+            </div>
+            <div>
+                <h2>Sabiduría</h2>
+                <picture><img src="https://cdn0.psicologia-online.com/es/posts/9/4/1/que_es_el_alma_en_psicologia_5149_orig.jpg" alt="Triskel-Alma">
+                    <figcaption>Segunda espiral: Alma</figcaption>
                 </picture>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
                     velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
                     magnam! Quo!</p>
             </div>
-            <div class="columna2">
-                <h2>Titulo2</h2>
-                <picture><img src="" alt="">
-                    <figcaption>Leyenda de imagen</figcaption>
-                </picture>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
-                    velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
-                    magnam! Quo!</p>
-            </div>
-            <div class="columna3">
-                <h2>Titulo3</h2>
-                <picture><img src="" alt="">
-                    <figcaption>Leyenda de imagen</figcaption>
+            <div>
+                <h2>Amor</h2>
+                <picture><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DickseeRomeoandJuliet.jpg/800px-DickseeRomeoandJuliet.jpg" alt="Triskel-Amor">
+                    <figcaption>Tercera espiral: Corazón</figcaption>
                 </picture>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sint placeat rerum eum impedit odit
                     velit, dolores possimus incidunt blanditiis quod animi asperiores voluptas eos, dolor quo, veritatis
