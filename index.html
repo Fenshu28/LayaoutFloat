@@ -8,6 +8,14 @@
     <title>Document</title>
 
     <style>
+        html{
+            --color1: #2e1e45 ;
+            --color2: #612a52;
+            --color3: #ba3259;
+            --color4: #ff695c;
+            --color5: #ccbca1;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -69,7 +77,9 @@
             position: -webkit-sticky;
             position: sticky;
             top: 0;
-            text-align: center;
+            /* text-align: center; */
+            display:flex;
+            justify-content: center;
         }
 
         .menu a {
@@ -100,13 +110,13 @@
             overflow: hidden;
         }
 
-        .flotante figure {
+        /* .flotante figure {
             overflow: hidden;
-        }
+        } */
 
-        .flotante img {
+        /* .flotante img {
             width: 100%;
-        }
+        } */
 
         h2,
         figcaption {
@@ -127,13 +137,18 @@
         }
 
         picture div {
+            width: 80%;
+            height: 300px;
+            overflow: hidden;            
+        }
+
+        picture img{
             width: 100%;
-            height: 200px;
-            overflow: hidden;
         }
 
         p {
             padding: 15px;
+            text-align: justify;
         }
 
         em{
