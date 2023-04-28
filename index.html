@@ -93,10 +93,10 @@
 
         .flotante>div{
             float: left;
-            width: 33.3333%;
-            height: 100vh;
+            width: calc(100% / 3);
+            height: 40em;
             padding: 0 15px;
-            overflow: hidden;
+            overflow: auto;
         }
 
         h2,
@@ -222,7 +222,7 @@
         @media (min-width: 481px) and (max-width: 768px) {
         /* Estilos para tablets */
             .flotante > div{
-                height: 70vw;
+                height: 100%;
                 width: calc(100% / 2);
             }
 
