@@ -20,14 +20,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        /* clase para el principal */
-        div.principal {
-            width: 80%;
-            margin: 0 auto;
-            padding: 0;
-            box-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+            color: white;
         }
 
         /* clase para el div que contiene el hero image */
@@ -72,7 +65,7 @@
         /* clase para el menu */
         .menu {
             /* height: 4em; */
-            background-color: #8e98c7;
+            background-color: var(--color1);
             overflow: hidden;
             position: -webkit-sticky;
             position: sticky;
@@ -85,38 +78,26 @@
         .menu a {
             text-decoration: none;
             text-align: center;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             padding: 100% 15px;
         }
 
         .menu a:hover {
             background-color: lightblue;
+            color: black;
         }
 
         .menu-elements {
-            /* position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            /* width: 100%; */
-            /* margin: 0 auto; */
             padding: 1em;
         }
 
-        .flotante>div {
+        .flotante>div{
             float: left;
-            width: 33%;
+            width: 33.333%;
+            height: 100vh;
             padding: 0 15px;
             overflow: hidden;
         }
-
-        /* .flotante figure {
-            overflow: hidden;
-        } */
-
-        /* .flotante img {
-            width: 100%;
-        } */
 
         h2,
         figcaption {
@@ -130,20 +111,24 @@
         }
 
         footer {
-            height: 5em;
-            background-color: #8e98c7;
-            overflow: auto;
+            /* #8e98c7 */
+            height: auto;
+            background-color: var(--color1);
+            
             text-align: center;
         }
-
+        
         picture div {
             width: 80%;
-            height: 300px;
-            overflow: hidden;            
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 0;
         }
 
         picture img{
-            width: 100%;
+            margin-left: -50%;
+            margin-top: -50%;
         }
 
         p {
@@ -157,7 +142,69 @@
             width: 80%;
             margin: 0 auto;
             padding: 50px;
+            color: black;
         }
+
+         /* Estilos para dispositivos móviles con ancho menor o igual a 480 píxeles */
+         @media (max-width: 480px) {
+        /* Estilos para dispositivos móviles */
+            .hero-image{
+                height: 75vh;
+            }    
+
+            img.hero{
+                height: 100%;
+                width: auto;
+            }
+
+            .menu{
+                height: 25vh;
+                position: static;
+            }
+            
+            .menu a {
+                display: block;
+                width: 100%;
+                padding: 4%;
+                font-size: 20px;
+            }
+
+            .menu-elements{
+                width: 100%;
+                padding: 0;
+            }
+
+            section{
+                padding: 25px 0;
+            }
+
+            .flotante>div{
+                float: none;
+                width: 100%;
+                padding: auto;
+            }
+
+            picture div{
+                width: 100%;
+            }
+
+            em{
+                font-size: 25px;
+            }
+        }
+
+        /* Estilos para computadoras de escritorio con ancho mayor a 769 píxeles */
+        @media (min-width: 769px) {
+        /* Estilos para computadoras de escritorio */
+            /* clase para el principal */
+            div.principal {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0;
+                box-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+            }
+        }
+         
     </style>
 
 </head>
@@ -177,15 +224,15 @@
 
         <nav class="menu">
             <div class="menu-elements">
-                <a href="/#Elemento1">Elemento1</a>
-                <a href="/#Elemento2">Elemento2</a>
-                <a href="/#Elemento3">Elemento3</a>
-                <a href="/#Elemento4">Elemento4</a>
+                <a href="/#Elemento1">¿Qué es?</a>
+                <a href="/#Elemento2">Fuerza</a>
+                <a href="/#Elemento3">Sabiduría</a>
+                <a href="/#Elemento4">Amor</a>                
             </div>
         </nav>
 
         <section class="flotante">
-            <div>
+            <div style="background: var(--color2);">
                 <h2>Fuerza</h2>
                 <picture>
                     <div>
@@ -201,7 +248,7 @@
                     todos sus elementos.
                 </p>
             </div>
-            <div>
+            <div style="background: var(--color4);">
                 <h2>Sabiduría</h2>
                 <picture>
                     <div>
@@ -215,7 +262,7 @@
                     tercer espiral es conocida como triskillan representa el duro camino del alma, este en específico es
                     el más nubloso por la dificultad de aprender del mundo de los dioses y del espíritu.</p>
             </div>
-            <div>
+            <div style="background: var(--color3);">
                 <h2>Amor</h2>
                 <picture>
                     <div>
@@ -231,11 +278,15 @@
         </section>
 
         <em>
-            “Tu mundo es una esfera sagrada… En su interior cohabitan las tres partes de ti, idénticas en tamaño, pero diferentes en naturaleza. Cada una de estas partes es tú mismo y contiene tu evolución y tu alma.» <br> Tradición oral celta en uno de los libros sagrados.
+            “Tu mundo es una esfera sagrada… En su interior cohabitan las tres partes de ti, idénticas en tamaño, pero diferentes en naturaleza. Cada una de estas partes es tú mismo y contiene tu evolución y tu alma.» <br> <br> Tradición oral celta en uno de los libros sagrados.
         </em>
 
-        <footer>
-            Creditos: Cristopher
+        <footer class="flotante">
+            <ul>
+                <li>Elemento</li>
+                <li>Elemento</li>
+                <li>Elemento</li>
+            </ul>
         </footer>
     </div>
 </body>
