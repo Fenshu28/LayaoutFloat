@@ -15,7 +15,7 @@
             --color4: #ff695c;
             --color5: #ccbca1;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -93,7 +93,7 @@
 
         .flotante>div{
             float: left;
-            width: 33.333%;
+            width: 33.3333%;
             height: 100vh;
             padding: 0 15px;
             overflow: hidden;
@@ -103,6 +103,11 @@
         figcaption {
             text-align: center;
         }
+        section p:first-child{
+            color: black;
+            width: 100%;
+            background-color: var(--color5);
+        }
 
         section::after {
             content: "";
@@ -110,14 +115,6 @@
             clear: both;
         }
 
-        footer {
-            /* #8e98c7 */
-            height: auto;
-            background-color: var(--color1);
-            
-            text-align: center;
-        }
-        
         picture div {
             width: 80%;
             height: 200px;
@@ -137,12 +134,35 @@
         }
 
         em{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color5);
             display: block;
             text-align: center;
-            width: 80%;
+            /* width: 80%; */
             margin: 0 auto;
             padding: 50px;
             color: black;
+        }
+
+        footer {
+            height: auto;
+            background-color: var(--color1);
+            padding: 15px;
+            overflow: auto;
+        }
+
+        .flotante ul{
+            float: left;
+            width: calc(70% / 3);
+            list-style-type: none;
+        }
+
+        div.flotante{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
 
          /* Estilos para dispositivos móviles con ancho menor o igual a 480 píxeles */
@@ -150,7 +170,7 @@
         /* Estilos para dispositivos móviles */
             .hero-image{
                 height: 75vh;
-            }    
+            }
 
             img.hero{
                 height: 100%;
@@ -161,7 +181,7 @@
                 height: 25vh;
                 position: static;
             }
-            
+
             .menu a {
                 display: block;
                 width: 100%;
@@ -181,6 +201,7 @@
             .flotante>div{
                 float: none;
                 width: 100%;
+                height: auto;
                 padding: auto;
             }
 
@@ -190,6 +211,25 @@
 
             em{
                 font-size: 25px;
+            }
+
+            .flotante ul{
+                width: calc(100% / 3);
+            }
+        }
+
+        /* Estilos para tablets con ancho entre 481 y 768 píxeles */
+        @media (min-width: 481px) and (max-width: 768px) {
+        /* Estilos para tablets */
+            .flotante > div{
+                height: 70vw;
+                width: calc(100% / 2);
+            }
+
+            .flotante [target="Colum3"]{
+                float: none;
+                width: 100%;
+                height: auto;
             }
         }
 
@@ -204,7 +244,7 @@
                 box-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
             }
         }
-         
+
     </style>
 
 </head>
@@ -227,12 +267,13 @@
                 <a href="/#Elemento1">¿Qué es?</a>
                 <a href="/#Elemento2">Fuerza</a>
                 <a href="/#Elemento3">Sabiduría</a>
-                <a href="/#Elemento4">Amor</a>                
+                <a href="/#Elemento4">Amor</a>
             </div>
         </nav>
 
         <section class="flotante">
-            <div style="background: var(--color2);">
+            <p>El trisquel o triskel, también llamado trikele o trinacria, es un símbolo geométrico celta y curvilíneo formado por tres brazos en espiral que se unen en un punto central, círculo o triángulo, configurando la forma de una hélice, es parecido a la esvástica o el tetraskel, una de las diferencias es que estos últimos tienen cuatro brazos formando ángulos de 90º. El tres es el número más sagrado para la cultura celta, y representa la perfección y el equilibrio.</p>
+            <div target = "Colum1" style="background: var(--color2);">
                 <h2>Fuerza</h2>
                 <picture>
                     <div>
@@ -248,7 +289,7 @@
                     todos sus elementos.
                 </p>
             </div>
-            <div style="background: var(--color4);">
+            <div target = "Colum2" style="background: var(--color4);">
                 <h2>Sabiduría</h2>
                 <picture>
                     <div>
@@ -262,7 +303,7 @@
                     tercer espiral es conocida como triskillan representa el duro camino del alma, este en específico es
                     el más nubloso por la dificultad de aprender del mundo de los dioses y del espíritu.</p>
             </div>
-            <div style="background: var(--color3);">
+            <div target = "Colum3" style="background: var(--color3);">
                 <h2>Amor</h2>
                 <picture>
                     <div>
@@ -281,12 +322,24 @@
             “Tu mundo es una esfera sagrada… En su interior cohabitan las tres partes de ti, idénticas en tamaño, pero diferentes en naturaleza. Cada una de estas partes es tú mismo y contiene tu evolución y tu alma.» <br> <br> Tradición oral celta en uno de los libros sagrados.
         </em>
 
-        <footer class="flotante">
-            <ul>
-                <li>Elemento</li>
-                <li>Elemento</li>
-                <li>Elemento</li>
-            </ul>
+        <footer>
+            <div class="flotante">
+                <ul>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ul>
+                <ul>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ul>
+                <ul>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
